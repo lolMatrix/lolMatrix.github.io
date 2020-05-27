@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Cen.sir</title>
     <link rel="stylesheet" href="css/main.css">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
    <header>
@@ -13,9 +13,9 @@
        </div>
        <div id="about">
             <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
-            <a href="#" title="Преимущества" onclick="slowScroll('#overiew')">Преимущества</a>
-            <a href="#" title="Контакты" onclick="slowScroll('#contact')">Контакты</a>
-            <a href="#" title="Ответы на вопросы" onclick="slowScroll('#faq')">FAQ</a>
+            <a href="#" title="Преимущества" onclick="slowScroll('#overview')">Отличия</a>
+            <a href="#" title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
+            <!--<a href="#" title="Ответы на вопросы" onclick="slowScroll('#faq')">FAQ</a>-->
        </div>
    </header>
    
@@ -33,11 +33,32 @@
            <span>Наша цель - повысить лояльность аудитории путем очистки комментариев от токсичных людей. Мы ставим перед собой задачу полностью заменить людей и автоматизировать процесс модерирования.</span>
        </div>
    </div>
-   <div id="overiew">
-   </div>
-   <div id="contact">
-   </div>
-   <div id="faq"></div>
+    <div id="overview">
+    <h2>Отличие от аналогов</h2>
+    <h4>с нами все проще</h4>
+
+    <div class="img">
+      <img src="https://st.depositphotos.com/1637787/3303/i/450/depositphotos_33037011-stock-photo-student-in-library.jpg" height="250" alt="">
+      <span>Человек хочет спать и кушать. Каждому модератору нужно платить и работают медленно.</span>
+    </div>
+    <div class="img">
+      <img src="https://thumbs.dreamstime.com/z/%D0%B2%D1%80%D0%B5%D0%BC%D1%8F-%D0%BE%D1%82-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8-%D0%BA%D0%BD%D0%BE%D0%BF%D0%BA%D0%B0-%D1%82%D1%83%D0%BC%D0%B1%D0%BB%D0%B5%D1%80%D0%B0-115826973.jpg" height="250" alt="">
+      <span>Фильтр по словам работает 24\7, но фильтрует только по словарю.</span>
+    </div>
+  </div>
+
+  <div id="contacts">
+    <center><h5>Обратная связь</h5></center>
+    <form id="form_input">
+      <label for="name">Имя <span>*</span></label><br>
+      <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+      <label for="email">Ваша почта <span>*</span></label><br>
+			<input type="email" placeholder="Введите email" name="email" id="email"><br>
+			<label for="message">Сообщение <span>*</span></label><br>
+			<textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+			<div id="mess_send" class="btn">Отправить</div>
+    </form>
+  </div>
    
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script>
