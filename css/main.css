@@ -48,6 +48,7 @@ header #logo span{
         float: right;
         width: 67%;
     }
+
 }
 
 @media (max-width: 812px) {
@@ -61,8 +62,13 @@ header #logo span{
         width: 100%;
     }
     #about > a:not(last-child){
-    margin: 0 20px;
-}
+    margin: 0 12px;
+      
+    }
+    #about > a:last-child{
+    margin-right: 12px;
+      
+    }
 }
 
 #about{
@@ -79,6 +85,7 @@ header #logo span{
     position: relative;
     transition: color .5s linear;
     text-decoration: none;
+     width: 16%;
 }
 #about > a:hover {
     color: #b0b0b0;
@@ -110,7 +117,7 @@ header #logo span{
 }
 
 #about > a:not(last-child){
-    margin-right: 7%;
+    margin-right: 12%;
 }
 
 .fixed{
