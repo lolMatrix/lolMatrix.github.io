@@ -61,10 +61,10 @@ header #logo span{
         float:inherit;
         width: 100%;
     }
-    #about > a:not(last-child){
+    /*#about > a:not(last-child){
     margin: 0 12px;
       
-    }
+    }*/
     #about > a:last-child{
     margin-right: 12px;
       
@@ -85,7 +85,7 @@ header #logo span{
     position: relative;
     transition: color .5s linear;
     text-decoration: none;
-     width: 16%;
+
 }
 #about > a:hover {
     color: #b0b0b0;
@@ -117,7 +117,7 @@ header #logo span{
 }
 
 #about > a:not(last-child){
-    margin-right: 12%;
+    margin-right: 4%;
 }
 
 .fixed{
@@ -295,6 +295,93 @@ header.fixed #logo{
   }
 }
 
+/*блок с отзывами*/
+
+#comments{
+    background-color: ghostwhite;
+    width: 80%;
+    padding: 100px 10%;
+    float: left;
+    border-top: 2px solid azure;
+    color: #484848;
+    font-size: 1.3em;
+    text-align: center;
+    color: slategray;
+}
+
+.comment{
+    width: 28%;
+    display: inline-block;
+    margin: 0 2%;
+    font-size: 0.7em;
+    text-align: left;
+    vertical-align: text-top;
+}
+
+#comments h2{
+    margin-bottom: 70px;
+    color: #484848;
+    font-size: 2em;
+    font-family: 'Roboto';
+}
+
+.comment img{
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid cornsilk;
+}
+
+.comment div{
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.comment div span{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5px;
+    font-size: 1.5em;
+    color: #12122ba3;
+}
+
+@media(min-width: 813px){
+    #comments{
+        width: 80%;
+        padding: 100px 10%;
+    }
+    .comment{
+        width: 28%;
+        margin: 2% 0;
+    }
+    
+    #comments h2{
+        margin-bottom: 70px;
+    }
+}
+
+@media(max-width: 812px){
+    
+    #comments h2{
+        margin: 30px 0;
+    }
+    
+    #comments{
+        width: 100%;
+        padding: 0;
+        padding-bottom: 8%;
+    }
+    .comment{
+        width: 98%!important;
+        margin: 2% 0;
+        padding: 0 2%;
+    }
+    .comment:not(last-child){
+        margin-bottom: 10px;
+        
+    }
+}
 /* Блок с контактами */
 #contacts {
   width: 100%;
@@ -370,52 +457,4 @@ h1, h2, h3, h4, h5 {
 
 .btn:hover {
   background-color: #c15443;
-}
-
-/* Вопросы и ответы */
-
-#faq {
-  background-color: #fff;
-  border-top: 2px dashed #e4e3e3;
-  width: 100%;
-  float: left;
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-
-@media (min-width: 801px) {
-  #faq div {
-    width: 25%;
-    margin-left: 6%;
-    float: left;
-  }
-}
-
-@media (max-width: 800px) {
-  #faq div {
-    width: 80%;
-    margin-left: 10%;
-    float: left;
-  }
-}
-
-#faq .title {
-  font-weight: lighter;
-  color: #a3a0ad;
-  margin-bottom: 20px;
-  font-size: 2.2em;
-}
-
-#faq .heading {
-  color: #7d7d7d;
-  font-size: 1.3em;
-  font-weight: bold;
-}
-
-#faq p {
-  font-family: Arimo, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  color: #4a4a4a;
-  font-size: 0.95em;
-  margin-bottom: 40px;
 }
